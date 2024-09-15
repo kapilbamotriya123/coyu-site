@@ -5,12 +5,22 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --coyu-blue: #393AFB;
+  --black: #171717;
+  --white: #FFFFFF;
+  --grey: #495057;
+  --blue-background: #F3F4FF;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --coyu-blue: #393AFB;
+    --black: #171717;
+    --white: #FFFFFF;
+    --grey: #495057;
+    --blue-background: #F3F4FF;
   }
 }
 

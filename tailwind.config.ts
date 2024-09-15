@@ -11,9 +11,15 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        'coyu-blue': "var(--coyu-blue)",
+        'black': "var(--black)",
+        'white': "var(--white)",
+        'grey': "var(--grey)",
+        'blue-background': "var(--blue-background)",
       },
     },
   },
   plugins: [],
 };
+
 export default config;
