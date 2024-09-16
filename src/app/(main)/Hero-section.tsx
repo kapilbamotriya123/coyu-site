@@ -59,7 +59,7 @@ const HeroSectionSlider = () => {
    ];
 
    return (
-      <div className="w-full max-w-md space-y-3 px-3 pt-7">
+      <div className="w-full space-y-3 px-3">
          <Slider {...settings}>
             <HeroSliderPreview />
             <HeroSliderPreview />
