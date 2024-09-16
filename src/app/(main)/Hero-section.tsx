@@ -74,7 +74,22 @@ const HeroSectionSlider = () => {
             }
          `}</style>
          <br className="my-3" />
-         <div className="flex w-full items-center gap-3 bg-blue-background p-3">
+         <div className="relative overflow-hidden flex w-full items-center gap-3 bg-blue-background p-3">
+            
+         <div >
+            <Image
+               src={bg_patters}
+               alt=""
+               width={100}
+               className="absolute -left-10 -top-15 z-10 rotate-45"
+            />
+            <Image
+               src={bg_patters}
+               alt=""
+               width={100}
+               className="absolute -bottom-12 -right-5 z-30 rotate-45"
+            />
+         </div>
             <div className="bg-red relative z-10 p-2">
                <Image
                   src={delivery_truck_wrapper}
