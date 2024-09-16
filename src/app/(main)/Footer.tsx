@@ -24,13 +24,13 @@ const Footer = () => {
             <span className="text-3xl">+</span>
         </div>
          <hr />
-         <div className="mt-5">
+         <div className="mt-5 ">
             <div className="flex items-center justify-center gap-5 px-3">
                <Image src={instagram} alt="Instagram" />
                 <Image src={facebook} alt="Facebook" />
                 <Image src={twitter} alt="Twitter" />
             </div>
-            <p className="text-center text-gray-400 uppercase mt-6 tracking-wider">
+            <p className="text-center text-gray-400 uppercase mt-6 tracking-wider pb-16">
                 © 2024 Coyu.com. All Rights Reserved.
             </p>
          </div>

@@ -19,7 +19,7 @@ const Email = () => {
             <input
                type="email"
                placeholder="Enter your email address"
-               className="mt-3 w-full rounded-md border border-gray-300 p-3"
+               className="mt-3 w-full rounded-md border border-gray-300 p-3 focus:outline-none focus:ring-2 focus:ring-coyu-blue"
             />
             <button className="mt-3 w-full rounded-md bg-coyu-blue p-3 text-white">
                Submit
