@@ -15,7 +15,7 @@ import { dm_Serif_Display } from '../ui/font';
 
 import Image from 'next/image';
 
-const CoyuAssuranceSlider = () => {
+const HeroSectionSlider = () => {
    const settings = {
       dots: true,
       infinite: true,
@@ -102,7 +102,7 @@ const CoyuAssuranceSlider = () => {
    );
 };
 
-export default CoyuAssuranceSlider;
+export default HeroSectionSlider;
 
 const HeroSliderPreview = () => {
    return (
@@ -137,5 +137,3 @@ const HeroSliderPreview = () => {
       </div>
    );
 };
-
-// export default HeroSection;

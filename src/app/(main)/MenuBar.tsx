@@ -18,7 +18,7 @@ const Menubar = () => {
          </div>
          <div className="relative self-end items-center text-sm font-bold">
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-14 border-2 border-coyu-blue p-1 rounded-full overflow-hidden">
-               <Image src={stylist} alt={''} />
+               <Image src={stylist} alt={''} className='rounded-full'/>
             </div>
                Speak To Stylist
          </div>
