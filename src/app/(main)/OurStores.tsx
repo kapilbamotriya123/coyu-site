@@ -13,7 +13,7 @@ const OurStore = () => {
    const [selected, setSelected] = useState('Delhi');
    return (
       <div className="space-y-3 overflow-hidden px-3 pt-7">
-         <h3 className="text-sm font-bold leading-3 tracking-wide">
+         <h3 className="text-sm font-bold leading-3 tracking-wide uppercase">
             Our Stores
          </h3>
          <div className="flex items-center justify-start gap-3">

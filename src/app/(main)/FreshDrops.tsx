@@ -64,21 +64,21 @@ const FreshDrops = () => {
             <div className="relative">
                <Image
                   src={grid_img_4}
-                  className="h-[185px] w-full rounded-lg object-cover"
+                  className="h-full w-full rounded-lg object-cover"
                   alt="Small Image 3"
                />
             </div>
             <div className="relative">
                <Image
                   src={grid_img_5}
-                  className="h-[185px] w-full rounded-lg object-cover"
+                  className="h-full w-full rounded-lg object-cover"
                   alt="Small Image 4"
                />
             </div>
             <div className="relative">
                <Image
                   src={grid_img_6}
-                  className="h-[185px] w-full rounded-lg object-cover"
+                  className="h-full w-full rounded-lg object-cover"
                   alt="Small Image 5"
                />
             </div>
