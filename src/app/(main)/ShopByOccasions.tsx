@@ -18,28 +18,56 @@ import grid_image5 from '../ui/assets/occasions-button/image5.jpg';
 import grid_image6 from '../ui/assets/occasions-button/image6.jpg';
 import grid_image7 from '../ui/assets/occasions-button/image7.jpg';
 import { dm_Serif_Display } from '../ui/font';
+import { useState } from 'react';
 
 const ShopByOccasions = () => {
+
+   const [selected, setSelected] = useState('Day-out');
+
    return (
       <div className="space-y-3 pt-7">
          <h3 className="px-3 text-sm font-bold uppercase leading-3 tracking-wide">
             Shop by occasions
          </h3>
          <div className="flex items-center justify-between px-3">
-            <button className="flex gap-1 rounded-sm bg-coyu-blue px-3 py-2 text-xs text-white">
-               <Image src={sun} alt="Day-out" />
+            <button onClick={() => setSelected('Day-out')}
+               className={`flex gap-1 rounded-sm px-3 py-2 text-xs ${selected === 'Day-out' ? `bg-coyu-blue text-white` : `border border-black text-black`} `}
+            >
+               <Image
+                  src={sun}
+                  alt="Day-out"
+                  className={`${selected === 'Day-out' ? '' : `invert`}`}
+               />
                Day-out
             </button>
-            <button className="flex gap-1 rounded-sm border border-black px-3 py-2 text-xs text-black">
-               <Image src={party} alt="Day-out" />
+            <button onClick={() => setSelected('Party')}
+               className={`flex gap-1 rounded-sm px-3 py-2 text-xs ${selected === 'Party' ? `bg-coyu-blue text-white` : `border border-black text-black`} `}
+            >
+               <Image
+                  src={party}
+                  alt="Party"
+                  className={`${selected === 'Party' && `invert`}`}
+               />
                Party
             </button>
-            <button className="flex gap-1 rounded-sm border border-black px-3 py-2 text-xs text-black">
-               <Image src={vacation} alt="Day-out" />
+            <button onClick={() => setSelected('Vacation')}
+               className={`flex gap-1 rounded-sm px-3 py-2 text-xs ${selected === 'Vacation' ? `bg-coyu-blue text-white` : `border border-black text-black`} `}
+            >
+               <Image
+                  src={vacation}
+                  alt="Vacation"
+                  className={`${selected === 'Vacation' && `invert`}`}
+               />
                Vacation
             </button>
-            <button className="flex gap-1 rounded-sm border border-black px-3 py-2 text-xs text-black">
-               <Image src={festive} alt="Day-out" />
+            <button onClick={() => setSelected('Festive')}
+               className={`flex gap-1 rounded-sm px-3 py-2 text-xs ${selected === 'Festive' ? `bg-coyu-blue text-white` : `border border-black text-black`} `}
+            >
+               <Image
+                  src={festive}
+                  alt="Festive"
+                  className={`${selected === 'Festive' && `invert`}`}
+               />
                Festive
             </button>
          </div>
@@ -59,7 +87,7 @@ const ShopByOccasions = () => {
                         <span
                            className={`${dm_Serif_Display.className} text-2xl leading-5`}
                         >
-                           Day-Out
+                           {selected}
                         </span>
                      </p>
                      <div className="h-fit rounded-sm bg-white p-2">

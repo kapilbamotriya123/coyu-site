@@ -14,16 +14,7 @@ const StoreEvents = () => {
          <h3 className="text-sm font-bold leading-3 tracking-wide">
             STORE EVENTS
          </h3>
-         <div className="flex items-center justify-start gap-3">
-            <button className="flex items-center gap-1 rounded-sm bg-coyu-blue px-3 py-2 text-xs text-white">
-               <Image src={button_icon} alt="location" />
-               Delhi
-            </button>
-            <button className="flex items-center gap-1 rounded-sm border border-black px-3 py-2 text-xs text-black">
-               <Image src={button_icon} alt="location" className="invert" />
-               Gurgaon
-            </button>
-         </div>
+
 
          <div className="scrollbar-hide overflow-x-auto">
             <div className="grid w-[150%] grid-cols-2 gap-2 py-3">

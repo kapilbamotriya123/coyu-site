@@ -16,7 +16,7 @@ import WhatsApp from './WhatsApp';
 
 const Home = () => {
    return (
-      <div className="h-fit">
+      <div className="h-fit  ">
          <HeroSection />
          <FreshDrops />
          <NewDrops />

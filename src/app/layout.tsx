@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
    return (
       <html lang="en">
-         <body className={`${hanken_Grotesk.className} font-normal text-black bg-white antialiased max-w-[500]`}>
+         <body className={`${hanken_Grotesk.className} font-normal text-black bg-white antialiased max-w-[500px] mx-auto`}>
             <Navbar />
             {children}
             <Menubar />

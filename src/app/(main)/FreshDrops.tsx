@@ -26,11 +26,11 @@ const FreshDrops = () => {
             </div>
          </div>
          <div className="mt-3 grid grid-cols-3 grid-rows-3 gap-1">
-            <div className="relative col-span-2 row-span-2 h-[380px] overflow-hidden">
+            <div className="relative col-span-2 row-span-2  overflow-hidden">
                <div className="absolute inset-0 z-20 h-full w-full  rounded-md  bg-gray-700 opacity-35"></div>
                <Image
                   src={grid_img_1}
-                  className="absolute inset-0 z-10 h-[380px] w-full rounded-md object-cover"
+                  className="absolute inset-0 z-10 h-full w-full rounded-md object-cover"
                   alt="Large Image"
                />
                <div className="gap leading-2 absolute bottom-3 z-50 w-full px-3 items-end flex justify-between text-xs font-light tracking-widest text-white">

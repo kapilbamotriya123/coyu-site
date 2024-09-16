@@ -80,13 +80,13 @@ const NewDrops = () => {
                </p>
             </div>
 
-            <div className="w-full flex justify-between rounded-md p-3 border border-black overflow-hidden bg-white">
+            <div className="w-full flex justify-between rounded-md  border border-black  bg-white">
                <input
                   type="text"
                   placeholder="ENTER YOUR MOBILE NUMBER"
-                  className="mr-2 text-xs w-full"
+                  className="mr-2 text-xs w-full focus:outline-none pl-2 rounded-md focus:ring-2 focus:ring-coyu-blue"
                />
-               <button className="text-coyu-blue text-xs bg-none tracking-wider">
+               <button className="text-coyu-blue text-xs bg-none p-3 tracking-wider">
                   SUBMIT
                </button>
             </div>

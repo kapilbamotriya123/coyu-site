@@ -7,20 +7,36 @@ import button_icon from '../ui/assets/our stores/button-icon.svg';
 import store1 from '../ui/assets/our stores/store1.jpg';
 import store2 from '../ui/assets/our stores/store2.jpg';
 import arrow from '../ui/assets/arrow.svg';
+import { useState } from 'react';
 
 const OurStore = () => {
+   const [selected, setSelected] = useState('Delhi');
    return (
       <div className="space-y-3 overflow-hidden px-3 pt-7">
          <h3 className="text-sm font-bold leading-3 tracking-wide">
             Our Stores
          </h3>
          <div className="flex items-center justify-start gap-3">
-            <button className="flex items-center gap-1 rounded-sm bg-coyu-blue px-3 py-2 text-xs text-white">
-               <Image src={button_icon} alt="location" />
+            <button
+               onClick={() => setSelected('Delhi')}
+               className={`flex gap-1 items-center rounded-sm px-3 py-2 text-xs ${selected === 'Delhi' ? `bg-coyu-blue text-white` : `border border-black text-black`} `}
+            >
+               <Image
+                  src={button_icon}
+                  alt="location"
+                  className={`${selected === 'Delhi' ? '' : `invert`}`}
+               />
                Delhi
             </button>
-            <button className="flex items-center gap-1 rounded-sm border border-black px-3 py-2 text-xs text-black">
-               <Image src={button_icon} alt="location" className="invert" />
+            <button
+               onClick={() => setSelected('Gurgaon')}
+               className={`flex gap-1 items-center rounded-sm px-3 py-2 text-xs ${selected === 'Gurgaon' ? `bg-coyu-blue text-white` : `border border-black text-black`} `}
+            >
+               <Image
+                  src={button_icon}
+                  alt="location"
+                  className={`${selected !== 'Gurgaon' && `invert`}`}
+               />
                Gurgaon
             </button>
          </div>
