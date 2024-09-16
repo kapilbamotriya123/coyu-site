@@ -2,7 +2,7 @@
 import Image from "next/image";
 import instagram from "../ui/assets/FOOTER/Vector.svg";
 import facebook from "../ui/assets/FOOTER/facebook.svg";
-import twitter from "../ui/assets/FOOTER/x.svg";
+import twitter from "../ui/assets/FOOTER/X.svg";
 
 
 const Footer = () => {
