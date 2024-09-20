@@ -29,9 +29,9 @@ const ShopByOccasions = () => {
          <h3 className="px-3 text-sm font-bold uppercase leading-3 tracking-wide">
             Shop by occasions
          </h3>
-         <div className="flex items-center justify-between px-3">
+         <div className="flex  flex-wrap items-center justify-between px-3">
             <button onClick={() => setSelected('Day-out')}
-               className={`flex gap-1 rounded-sm px-3 py-2 text-xs flex-wrap ${selected === 'Day-out' ? `bg-coyu-blue text-white` : `border border-black text-black`} `}
+               className={`flex gap-1 rounded-sm px-3 py-2 text-xs ${selected === 'Day-out' ? `bg-coyu-blue text-white` : `border border-black text-black`} `}
             >
                <Image
                   src={sun}
